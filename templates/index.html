@@ -43,7 +43,7 @@
               <a class="nav-link js-scroll-trigger" href="#services">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Our Cats</a>
+              <a class="nav-link js-scroll-trigger" href="#cats">Our Cats</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">Why</a>
@@ -66,46 +66,8 @@
       </div>
     </header>
 
-    <!-- Services -->
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Best cats</h2>
-            <h3 class="section-subheading text-muted">If buying a cat, only in the Geeky Shop.</h3>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-truck fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Quick shipping</h4>
-            <p class="text-muted">Our cats are dispatched on the next workday in awesome boxes. You know, cats love boxes!</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-child fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Happiness every day</h4>
-            <p class="text-muted">Yes, now you can buy happiness. You life will never be the same.</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Buy from market leader</h4>
-            <p class="text-muted">Geeky cats is the only shop on the internet which sell SO AWESOME cats.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+    <section class="bg-light" id="cats">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -115,7 +77,7 @@
         </div>
         <div class="row">
           {% for cat in cats %}
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -196,6 +158,44 @@
                 </div>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Best cats</h2>
+            <h3 class="section-subheading text-muted">If buying a cat, only in the Geeky Shop.</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-truck fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Quick shipping</h4>
+            <p class="text-muted">Our cats are dispatched on the next workday in awesome boxes. You know, cats love boxes!</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-child fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Happiness every day</h4>
+            <p class="text-muted">Yes, now you can buy happiness. You life will never be the same.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Buy from market leader</h4>
+            <p class="text-muted">Geeky cats is the only shop on the internet which sell SO AWESOME cats.</p>
           </div>
         </div>
       </div>
