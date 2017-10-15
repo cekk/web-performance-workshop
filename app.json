@@ -1,15 +1,13 @@
 {
-  "name": "Start on Heroku: Python",
-  "description": "A barebones Python app, which can easily be deployed to Heroku.",
+  "name": "Web performance workshop",
+  "description": "A minimal Tornado app to deploy on Heroku and improve the loading speed.",
   "image": "heroku/python",
-  "repository": "https://github.com/heroku/python-getting-started",
-  "keywords": ["python", "django" ],
-  "addons": [ "heroku-postgresql" ],
+  "repository": "https://github.com/ma3str0/web-performance-workshop",
+  "logo": "http://e5t.ro/cat.jpg",
+  "keywords": ["python", "tornado" ],
   "environments": {
     "test": {
       "scripts": {
-        "test-setup": "python manage.py collectstatic --noinput",
-        "test": "python manage.py test"
       }
     }
   }
