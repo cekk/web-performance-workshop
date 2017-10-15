@@ -1,5 +1,5 @@
 - name: Oscar
-  image: /img/cats/cat2.jpg
+  image: /img/cats/cat1.jpg
   price: 1000 €
 - name: Misty
   image: /img/cats/cat2.jpg
