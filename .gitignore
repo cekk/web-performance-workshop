@@ -3,3 +3,7 @@ venv
 staticfiles
 .env
 db.sqlite3
+.DS_Store
+.idea
+.ropeproject
+upload_s3.py

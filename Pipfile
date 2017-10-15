@@ -5,11 +5,11 @@ verify_ssl = true
 [packages]
 
 "dj-database-url" = "*"
-django = "*"
 gunicorn = "*"
 "psycopg2" = "*"
 whitenoise = "*"
 tornado = "*"
+PyYAML = "*"
 
 [requires]
 python_version = "3.6"
