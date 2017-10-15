@@ -19,6 +19,8 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="/img/icons/icon_32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/img/icons/icon_16.png" sizes="16x16" />
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
@@ -88,7 +90,7 @@
               <i class="fa fa-child fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Happiness every day</h4>
-            <p class="text-muted">Yes, you can buy happiness. You life will never be the same.</p>
+            <p class="text-muted">Yes, now you can buy happiness. You life will never be the same.</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -124,7 +126,7 @@
             </a>
             <div class="portfolio-caption">
               <h4>{{ cat['name'] }}</h4>
-              <p class="text-muted">Illustration</p>
+              <p class="text-muted">{{ cat['price'] }} incl. VAT</p>
             </div>
           </div>
           {% end %}
@@ -233,8 +235,8 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Our cats are so awesome, that we don't care what you think! But,
-              feel free to fill this form.</h3>
+            <h3 class="section-subheading text-muted">Our cats are so awesome, that we don't care what you think.
+              But, feel free to write something!</h3>
           </div>
         </div>
         <div class="row">
@@ -264,7 +266,7 @@
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-xl" type="submit">It does not work anyway</button>
+                  <button id="sendMessageButton" class="btn btn-xl" type="submit">Form does not work anyway</button>
                 </div>
               </div>
             </form>
