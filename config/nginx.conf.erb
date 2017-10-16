@@ -38,9 +38,6 @@ http {
 		server unix:/tmp/nginx.socket fail_timeout=0;
  	}
 
-    proxy_cache_path   /tmp/cache/ levels=1:2 keys_zone=s3_cache:10m max_size=500m
-                       inactive=60m use_temp_path=off;
-
 	server {
 		listen <%= ENV["PORT"] %>;
 		server_name _;
@@ -57,29 +54,5 @@ http {
 			proxy_redirect off;
 			proxy_pass http://app_server;
 		}
-		location /s3/ {
-            proxy_http_version     1.1;
-            proxy_set_header       Connection "";
-            proxy_set_header       Authorization '';
-            proxy_set_header       Host anton-testing.s3.eu-central-1.amazonaws.com;
-            proxy_hide_header      x-amz-id-2;
-            proxy_hide_header      x-amz-request-id;
-            proxy_hide_header      x-amz-meta-server-side-encryption;
-            proxy_hide_header      x-amz-server-side-encryption;
-            proxy_hide_header      Set-Cookie;
-            proxy_ignore_headers   Set-Cookie;
-            proxy_cache_revalidate on;
-            proxy_intercept_errors on;
-
-            proxy_cache            s3_cache;
-            proxy_cache_valid      200 24h;
-            proxy_cache_valid      403 15m;
-            proxy_cache_use_stale  error timeout updating http_500 http_502 http_503 http_504;
-            proxy_cache_lock       on;
-            proxy_cache_bypass     $http_cache_purge;
-            add_header             Cache-Control max-age=31536000;
-            add_header             X-Cache-Status $upstream_cache_status;
-            proxy_pass             http://anton-testing.s3.eu-central-1.amazonaws.com/;
-        }
 	}
 }
