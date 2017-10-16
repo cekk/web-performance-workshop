@@ -1,0 +1,12 @@
+venv
+*.pyc
+staticfiles
+.env
+db.sqlite3
+.DS_Store
+.idea
+.ropeproject
+node_modules
+js
+css
+vendor

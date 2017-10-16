@@ -1,0 +1,14 @@
+{
+  "name": "Web performance workshop",
+  "description": "A minimal Tornado app to deploy on Heroku and improve the loading speed.",
+  "image": "heroku/python",
+  "repository": "https://github.com/ma3str0/web-performance-workshop",
+  "logo": "http://e5t.ro/cat.jpg",
+  "keywords": ["python", "tornado" ],
+  "environments": {
+    "test": {
+      "scripts": {
+      }
+    }
+  }
+}
