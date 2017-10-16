@@ -21,8 +21,5 @@
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "3.0.0",
     "browser-sync": "2.18.13"
-  },
-  "scripts": {
-    "postinstall": "./node_modules/gulp/bin/gulp.js"
   }
 }

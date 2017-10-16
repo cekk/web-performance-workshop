@@ -7,6 +7,3 @@ db.sqlite3
 .idea
 .ropeproject
 node_modules
-js
-css
-vendor
