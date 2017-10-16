@@ -4,10 +4,6 @@ verify_ssl = true
 
 [packages]
 
-"dj-database-url" = "*"
-gunicorn = "*"
-"psycopg2" = "*"
-whitenoise = "*"
 tornado = "*"
 PyYAML = "*"
 
